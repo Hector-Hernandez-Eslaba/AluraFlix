@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const videoCard = ({ video, onSelect, onDelete, onEdit }) => {
+const Card = ({ video, onSelect, onDelete, onEdit }) => {
   return (
     <CardContainer>
       <img src={video.imagen} alt={video.titulo} onClick={() => onSelect(video)} />
@@ -57,4 +57,4 @@ const ButtonGroup = styled.div`
     }
 `
 
-export default videoCard;
+export default Card;
