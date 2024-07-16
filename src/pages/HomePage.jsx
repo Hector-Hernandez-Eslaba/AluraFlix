@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Hero from '../components/Hero';
-import videoCard from '../components/videoCard';
+import Card from '../components/videoCard';
 import Modal from '../components/Modal';
 import { VideoContext } from '../context/VideoContext';
 
