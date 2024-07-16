@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Hero from '../components/Hero';
-import Card from '../components/videoCard';
+import Card from '../components/Card';
 import Modal from '../components/Modal';
 import { VideoContext } from '../context/VideoContext';
 
@@ -44,7 +44,7 @@ const HomePage = () => {
                         <h2>{category}</h2>
                         <SectionCards>
                             {videos.filter(video => video.categoria === category).map(video => (
-                                <videoCard
+                                <Card
                                     key={video.id}
                                     video={video}
                                     onSelect={handleSelectVideo}
